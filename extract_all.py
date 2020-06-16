@@ -37,14 +37,21 @@ def extract_all():
       extract_tgz('archives/Poses_D2_Positions_{}.tgz'.format(subject_id),
                   path.join(out_dir, 'Poses_D2_Positions'))
       extract_tgz('archives/Poses_D3_Positions_{}.tgz'.format(subject_id),
-                  path.join(out_dir, 'Poses_D3_Positions')),
+                  path.join(out_dir, 'Poses_D3_Positions'))
       extract_tgz('archives/Poses_D3_Positions_mono_{}.tgz'.format(subject_id),
-                  path.join(out_dir, 'Poses_D3_Positions_mono')),
+                  path.join(out_dir, 'Poses_D3_Positions_mono'))
       extract_tgz('archives/Poses_D3_Positions_mono_universal_{}.tgz'.format(subject_id),
-                  path.join(out_dir, 'Poses_D3_Positions_mono_universal')),
+                  path.join(out_dir, 'Poses_D3_Positions_mono_universal'))
+      extract_tgz('archives/Poses_D3_Positions_mono_universal_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'Poses_D3_Positions_mono_universal'))
       extract_tgz('archives/Videos_{}.tgz'.format(subject_id),
                   path.join(out_dir, 'Videos'))
-
+      extract_tgz('archives/TOF_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'TOF'))
+      extract_tgz('archives/Meshes_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'Meshes'))
+      extract_tgz('archives/PointCloud_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'PointCloud'))
 
 if __name__ == '__main__':
   extract_all()

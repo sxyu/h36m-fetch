@@ -20,7 +20,6 @@ subjects = [
     ('S11', 5),
 ]
 
-
 def md5(filename):
     hash_md5 = hashlib.md5()
     with open(filename, 'rb') as f:
@@ -79,6 +78,12 @@ def download_all(phpsessid):
              'download=1&filepath=Poses/D3_Positions_mono_universal&filename=SubjectSpecific_{}.tgz'.format(id)),
             ('Videos_{}.tgz'.format(subject_id),
              'download=1&filepath=Videos&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('TOF_{}.tgz'.format(subject_id),
+                'download=1&filepath=TOF&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('Meshes_{}.tgz'.format(subject_id),
+                'download=1&filepath=Meshes&filename={}.tgz'.format(subject_id)),
+            ('PointCloud_{}.tgz'.format(subject_id),
+                'download=1&filepath=PointCloud&filename={}.tgz'.format(subject_id)),
         ]
 
     out_dir = 'archives'
