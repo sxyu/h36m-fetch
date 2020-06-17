@@ -78,12 +78,24 @@ def download_all(phpsessid):
              'download=1&filepath=Poses/D3_Positions_mono_universal&filename=SubjectSpecific_{}.tgz'.format(id)),
             ('Videos_{}.tgz'.format(subject_id),
              'download=1&filepath=Videos&filename=SubjectSpecific_{}.tgz'.format(id)),
+
             ('TOF_{}.tgz'.format(subject_id),
                 'download=1&filepath=TOF&filename=SubjectSpecific_{}.tgz'.format(id)),
             ('Meshes_{}.tgz'.format(subject_id),
                 'download=1&filepath=Meshes&filename={}.tgz'.format(subject_id)),
             ('PointCloud_{}.tgz'.format(subject_id),
                 'download=1&filepath=PointCloud&filename={}.tgz'.format(subject_id)),
+
+            ('Segments_mat_gt_bb_{}.tgz'.format(subject_id),
+                'download=1&filepath=Segments/mat_gt_bb&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('Segments_mat_gt_bs_{}.tgz'.format(subject_id),
+                'download=1&filepath=Segments/mat_gt_bs&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('Segments_mat_gt_pl_{}.tgz'.format(subject_id),
+                'download=1&filepath=Segments/mat_gt_pl&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('Segments_mat_gt_rd_{}.tgz'.format(subject_id),
+                'download=1&filepath=Segments/mat_gt_rd&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('Segments_mat_gt_scd_{}.tgz'.format(subject_id),
+                'download=1&filepath=Segments/mat_gt_scd&filename=SubjectSpecific_{}.tgz'.format(id)),
         ]
 
     out_dir = 'archives'
