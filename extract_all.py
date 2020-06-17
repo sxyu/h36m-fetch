@@ -52,6 +52,16 @@ def extract_all():
                   path.join(out_dir, 'Meshes'))
       extract_tgz('archives/PointCloud_{}.tgz'.format(subject_id),
                   path.join(out_dir, 'PointCloud'))
+      extract_tgz('archives/Segments_mat_gt_bb_{}.tgz'.format(subject_id),
+              path.join(out_dir, 'Segments_mat_gt_bb'))
+      extract_tgz('archives/Segments_mat_gt_bs_{}.tgz'.format(subject_id),
+              path.join(out_dir, 'Segments_mat_gt_bs'))
+      extract_tgz('archives/Segments_mat_gt_pl_{}.tgz'.format(subject_id),
+              path.join(out_dir, 'Segments_mat_gt_pl'))
+      extract_tgz('archives/Segments_mat_gt_rd_{}.tgz'.format(subject_id),
+              path.join(out_dir, 'Segments_mat_gt_rd'))
+      extract_tgz('archives/Segments_mat_gt_scd_{}.tgz'.format(subject_id),
+              path.join(out_dir, 'Segments_mat_gt_scd'))
 
 if __name__ == '__main__':
   extract_all()
